@@ -23,7 +23,7 @@ const linBtn = document.querySelector('#linBtn')
 
 async function weather() {
 
-    const apiData = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${input.value}&aqi=no`
+    const apiData = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${input.value}&aqi=no`
 
     try{
         const response = await fetch(apiData)
@@ -69,3 +69,6 @@ input.addEventListener('keyup', () => {
 gitBtn.addEventListener('click', () => {window.location.href=`https://github.com/EldostJs/AboutMe`})
 
 linBtn.addEventListener('click', () => {window.location.href=`https://www.linkedin.com/in/eldost-mirzeyev-8512732aa/`})
+
+
+// ------------------------------------ The End
